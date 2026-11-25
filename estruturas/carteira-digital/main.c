@@ -5,9 +5,20 @@
 
 int main(){
 	
-	struct carteira meusclientes;
+	printf("\n");
 	
-	cadastrarCliente(&meusclientes);
+	int quant;
+	printf("==== Digite a quantidade de clientes a serem cadastrados ===");
+	printf("\n");
+	printf("\n");
+	printf("Quantidade = ");
+	scanf("%d",&quant);
+
+	printf("\n");
+	
+	struct carteira meusclientes[quant];
+	
+	cadastrarCliente(meusclientes, quant);
+	
+	saidaPrograma (meusclientes, quant);
 }
-
-
